@@ -2,7 +2,7 @@
   "name": "parivartan-haremi-owlsystems",
   "displayName": "Parivartan",
   "description": "A custom testing tool for haremi project",
-  "image":"icon.png",
+  "image":"images/icon.png",
   "publisher": "sauravwastaken",
   "version": "0.0.2",
   "engines": {
@@ -28,6 +28,10 @@
         "./html-custom-data.json"
       ]
     }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Sauravwastaken/parivartan-haremi.git"
   },
   "scripts": {
     "lint": "eslint .",
