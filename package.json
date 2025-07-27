@@ -1,0 +1,43 @@
+{
+  "name": "parivartan-haremi-owlsystems",
+  "displayName": "Parivartan",
+  "description": "A custom testing tool for haremi project",
+  "image":"icon.png",
+  "publisher": "sauravwastaken",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:php"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "educational-validator.fixIssue",
+        "title": "Fix Educational Content Issue"
+      }
+    ],
+     "html": {
+      "customData": [
+        "./html-custom-data.json"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "16.x",
+    "eslint": "^8.1.0",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}

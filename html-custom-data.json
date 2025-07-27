@@ -1,0 +1,19 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "values": [
+            "left",
+            "center",
+            "right",
+            "justify"
+          ]
+        }
+      ]
+    }
+  ]
+}
